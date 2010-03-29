@@ -95,6 +95,12 @@ $modAbout['update']['deps']['mod'] = array();
 class rw_Module_update extends rw_Module implements rw_iModule
 {
 	/**
+	 *
+	 * @var unknown_type
+	 */
+	private $cn;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param array $modAbout module information
@@ -117,10 +123,59 @@ class rw_Module_update extends rw_Module implements rw_iModule
 	 */
 	public function index()
 	{
-		/**
-		 * XXX
-		 */
-		
+		if (isset($_POST['request']) && isset($_POST['cn']))
+		{
+			$this->cn = $_POST['cn'];
+
+			if(!is_readable(_APP_OPT_DIR.'certs/'.$this->cn.'.crt'))
+			{
+				exit;
+			}
+				
+			$this->_update();
+
+			switch ($_POST['request'])
+			{
+				/**
+				 * licenseString
+				 * a8ee21598ca7cefa744e25f401aae48130b99afd
+				 */
+				case 'a8ee21598ca7cefa744e25f401aae48130b99afd' : {
+					header("Content-Type: text/plain");
+					require _APP_OPT_DIR.'certs/'.$this->cn.'.lic';
+					break;
+				}
+				/**
+				 * licenseKey
+				 * 170f27a90290081cdedf11e3c87e3abe90592e49
+				 */
+				case '170f27a90290081cdedf11e3c87e3abe90592e49' : {
+					header("Content-Type: text/plain");
+					require _APP_OPT_DIR.'certs/'.$this->cn.'.pas';
+					break;
+				}
+			}
+		}
+		exit;
+	}
+
+	private function _update()
+	{
+		$data = file_get_contents(_APP_OPT_DIR.'certs/'.$this->cn.'.xml');
+
+		$publicKey = openssl_pkey_get_public(file_get_contents(_APP_OPT_DIR.'certs/'.$this->cn.'.crt'));
+
+		openssl_seal($data, $sealed, $ekeys, array($publicKey));
+
+		openssl_free_key($publicKey);
+
+		$sealed = base64_encode($sealed);
+
+		$Xevk = base64_encode($ekeys[0]);
+
+		file_put_contents(_APP_OPT_DIR.'certs/'.$this->cn.'.lic', $sealed);
+
+		file_put_contents(_APP_OPT_DIR.'certs/'.$this->cn.'.pas', $Xevk);
 	}
 }
 ?>
