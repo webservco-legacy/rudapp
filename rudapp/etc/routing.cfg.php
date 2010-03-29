@@ -43,5 +43,9 @@ if(!defined('_RW_VALID'))
  *
  * This must be present, and always first.
  */
-$routing['index'] = 'debug/index/index';
+$routing['index'] = 'license/index/index';
+/**
+ * Custom route - update license.
+ */
+$routing['update/({any})'] = 'license/update/index/$1';
 ?>

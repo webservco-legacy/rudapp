@@ -3,7 +3,7 @@
  * $Id$
  *
  * $URL$
- * <BR>Profile section.
+ * <BR>Debug section.
  * <BR>Index module.
  *
  * @author     Radu Maier <radu@rudisoft.net>
@@ -94,13 +94,6 @@ $modAbout['index']['deps']['mod'] = array();
  */
 class rw_Module_index extends rw_Module implements rw_iModule
 {
-	/**
-	 * User data.
-	 *
-	 * @var array
-	 */
-	private $userData;
-
 	/**
 	 * Constructor.
 	 *
