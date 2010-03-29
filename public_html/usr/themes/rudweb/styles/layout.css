@@ -1,0 +1,92 @@
+/**
+ * $Id$
+ *
+ * $URL$
+ * <BR>Main style sheet.
+ *
+ * @author     Radu Maier <radu@rudisoft.net>
+ * @copyright  Copyright (c) 2008, Radu Maier
+ * @license    http://opensource.org/licenses/gpl-3.0.html
+ * @version    $Revision$
+ * @since      2010-03-29 21:15:00
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+/* ********** ********** ********** ********** ********** LAYOUT START ********** ********** ********** ********** ********** */
+/* 
+CSS Reset from
+http://www.iamntz.com/342/frontend-developer/css-reset/ 
+ */
+/* resetting some default styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+a:focus {outline:1px dotted #999;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+html { font-size:100.01%; }
+body { font-size:0.625em; }
+
+textarea {overflow:auto}
+button {cursor:pointer}
+input[type="checkbox"],
+input[type="radio"],
+input.radio,
+input.checkbox {
+	vertical-align:text-top;
+	width:13px;
+	height:13px;
+	padding:0;
+	margin:0;
+	position:relative;
+	overflow:hidden;
+	top:2px;
+}
+a {text-decoration:none}
+a:hover {text-decoration:underline}
+/*  -----------------------------------
+	a better and smarter way to clear floats
+--------------------------------------*/
+
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix {display:inline-block}
+/* Hide from IE Mac \*/
+.clearfix {display:block}
+/* End hide from IE Mac */
+* html .clearfix {height:1px}
+
+/* ********** ********** ********** ********** ********** LAYOUT END ********** ********** ********** ********** ********** */

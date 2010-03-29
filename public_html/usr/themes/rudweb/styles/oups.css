@@ -1,0 +1,46 @@
+/**
+ * $Id$
+ *
+ * $URL$
+ * <BR>Module style sheet.
+ *
+ * @author     Radu Maier <radu@rudisoft.net>
+ * @copyright  Copyright (c) 2008, Radu Maier
+ * @license    http://opensource.org/licenses/gpl-3.0.html
+ * @version    $Revision$
+ * @since      2010-03-29 21:16:00
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+/* ********** ********** ********** ********** ********** ERROR START ********** ********** ********** ********** ********** */
+div.err_msg
+{
+	
+}
+
+div.err_msg label
+{
+color: #CCC;
+}
+
+textarea.err_trace
+{
+background-color: #090806;
+color: #B26468;
+border: 1px dotted #B26468;
+width: 800px;
+height: 120px;
+font-size: 11px;
+}
+/* ********** ********** ********** ********** ********** ERROR END ********** ********** ********** ********** ********** */
