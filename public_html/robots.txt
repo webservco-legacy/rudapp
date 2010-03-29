@@ -1,0 +1,6 @@
+# $Id$
+# $URL$
+User-Agent: *
+Allow: /
+Disallow: /usr/
+Disallow: /var/
