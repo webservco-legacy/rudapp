@@ -9,7 +9,7 @@
  * @copyright  Copyright (c) 2009, Radu Maier
  * @license    http://opensource.org/licenses/gpl-3.0.html
  * @version    $Revision$
- * @since      2010-03-29 21:08:00
+ * @since      2010-03-25 10:15:00
  * @access     public
  * @package    rwInt
  *
@@ -43,11 +43,15 @@ $langMod['SECTION']['TITLE'] = 'Error';
 $langMod['INDEX']['TITLE'] = 'Error';
 $langMod['INDEX']['H1']    = 'A website error has occured.';
 $langMod['INDEX']['STT']   = 'We apologize for the inconvenience.';
-$langMod['INDEX']['TYPE']  = 'Type';
-$langMod['INDEX']['MSG']   = 'Message';
-$langMod['INDEX']['TIME']  = 'Time';
-$langMod['INDEX']['CODE']  = 'Code';
-$langMod['INDEX']['FILE']  = 'File';
-$langMod['INDEX']['LINE']  = 'Line';
-$langMod['INDEX']['TRACE'] = 'Trace';
+
+$langMod['CORE']['TITLE'] = 'Error';
+$langMod['CORE']['H1']    = 'A website error has occured.';
+$langMod['CORE']['STT']   = 'We apologize for the inconvenience.';
+$langMod['CORE']['TYPE']  = 'Type';
+$langMod['CORE']['MSG']   = 'Message';
+$langMod['CORE']['TIME']  = 'Time';
+$langMod['CORE']['CODE']  = 'Code';
+$langMod['CORE']['FILE']  = 'File';
+$langMod['CORE']['LINE']  = 'Line';
+$langMod['CORE']['TRACE'] = 'Trace';
 ?>

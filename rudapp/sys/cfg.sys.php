@@ -9,7 +9,7 @@
  * @copyright  Copyright (c) 2009, Radu Maier
  * @license    http://opensource.org/licenses/gpl-3.0.html
  * @version    $Revision$
- * @since      2010-03-29 19:42:00
+ * @since      2010-03-17 14:27:00
  * @access     public
  * @package    rwApp
  *
@@ -109,7 +109,7 @@ if(!defined('_APP_ERR'))
 	/**
 	 * Set database type.
 	 */
-	define('_APP_ERR', ($cfg->settings->errors == '1') ? TRUE : FALSE);
+	define('_APP_ERR', ($cfg->settings->errors == '0') ? FALSE : $cfg->settings->errors);
 }
 
 /**

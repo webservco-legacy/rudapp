@@ -10,7 +10,7 @@
  * @copyright  Copyright (c) 2009, Radu Maier
  * @license    http://opensource.org/licenses/gpl-3.0.html
  * @version    $Revision$
- * @since      2010-03-29 21:07:00
+ * @since      2010-03-25 10:13:00
  * @access     public
  * @package    rwMod
  *
@@ -120,6 +120,60 @@ class rw_Module_core extends rw_Module implements rw_iModule
 	 * @see rudweb/lib/mod/rw_iModule#index()
 	 */
 	public function index($err=NULL)
+	{
+		/**
+		 * Check if we got called directly (no error info).
+		 */
+		if(!is_array($err)){
+			/**
+			 * Redirect to section index page.
+			 */
+			return $this->rwCore->rwExts['Routing']->rwRedirect('oups');
+		}
+		/**
+		 * Get core error messages.
+		 */
+		$langCore = $this->rwCore->rwGetLang('CORE');
+		/**
+		 * Check if the error message is actually a translation key.
+		 */
+		if(array_key_exists($err['type'], $langCore['ERROR']) && (array_key_exists($err['msg'], $langCore['ERROR'][$err['type']])))
+		{
+			/**
+			 * Get error message translation.
+			 */
+			$err['msg'] = $langCore['ERROR'][$err['type']][$err['msg']];
+			/**
+			 * Check if we have error message arguments.
+			 */
+			if(count($err['msga']) > 0)
+			{
+				/**
+				 * Format error message to include arguments.
+				 */
+				$err['msg'] = $this->rwCore->rwExts['Misc']->rwSprintf($err['msg'], $err['msga']);
+			}
+		}
+		/**
+		 * Unset message arguments.
+		 */
+		unset($err['msga']);
+		/**
+		 * Set error code string.
+		 */
+		$err['codestr'] = $langCore['ERROR']['CODESTR'][$err['codestr']];
+		/**
+		 * Return result.
+		 */
+		return $this->_output(__FUNCTION__, $err);
+	}
+
+	/**
+	 * Detailed error reporting.
+	 *
+	 * @param array $err error info
+	 */
+	public function core($err=NULL)
 	{
 		/**
 		 * Check if we got called directly (no error info).

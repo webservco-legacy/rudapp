@@ -9,7 +9,7 @@
  * @copyright  Copyright (c) 2009, Radu Maier
  * @license    http://opensource.org/licenses/gpl-3.0.html
  * @version    $Revision$
- * @since      2010-03-29 21:27:00
+ * @since      2010-03-25 10:08:00
  * @access     public
  * @package    rwOut
  *
@@ -29,20 +29,4 @@
 ?>
 				<h1><?php echo $ln['MOD'][$action]['H1']; ?></h1>
 				<p><?php echo $ln['MOD'][$action]['STT']; ?></p>
-				<div class="err_msg">
-					<p>
-						<label><?php echo $ln['MOD'][$action]['TYPE']; ?>:</label> <?php echo $type; ?>
-						<label><?php echo $ln['MOD'][$action]['CODE']; ?>:</label> <?php echo $code; ?> (<?php echo $codestr; ?>)
-						<label><?php echo $ln['MOD'][$action]['TIME']; ?>:</label> <?php echo $time; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['MSG']; ?>:</label> <?php echo $msg; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['FILE']; ?>:</label> <?php echo $file; ?> <label><?php echo $ln['MOD'][$action]['LINE']; ?>:</label> <?php echo $line; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['TRACE']; ?>:</label>
-						<textarea class="err_trace" rows="10" cols="100"><?php echo $tracestr; ?></textarea>
-					</p>
-				</div>
+				<p><?php echo $msg; ?></p>

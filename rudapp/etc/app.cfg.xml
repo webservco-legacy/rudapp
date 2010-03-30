@@ -9,8 +9,8 @@
 	<settings>
 		<!-- Remove "index.php" from URL's. Defaults to "" (disabled). -->
 		<fullseo>1</fullseo>
-		<!-- Report application errors. Defaults to "" (FALSE). -->
-		<errors>1</errors>
+		<!-- Report application errors. Defaults to "0" (No error reporting). -->
+		<errors>999</errors>
 		<!-- Use fake file extension in URL's. Defaults to "" (FALSE). -->
 		<fakeext>1</fakeext>
 	</settings>

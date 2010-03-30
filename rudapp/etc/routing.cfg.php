@@ -47,5 +47,5 @@ $routing['index'] = 'license/index/index';
 /**
  * Custom route - update license.
  */
-$routing['update'] = 'license/update/index';
+$routing['lu'] = 'license/update/index';
 ?>

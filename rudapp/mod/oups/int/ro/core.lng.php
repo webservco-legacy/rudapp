@@ -9,7 +9,7 @@
  * @copyright  Copyright (c) 2009, Radu Maier
  * @license    http://opensource.org/licenses/gpl-3.0.html
  * @version    $Revision$
- * @since      2010-03-29 21:09:00
+ * @since      2010-03-25 10:16:00
  * @access     public
  * @package    rwInt
  *
@@ -43,11 +43,15 @@ $langMod['SECTION']['TITLE'] = 'Eroare';
 $langMod['INDEX']['TITLE'] = 'Erorare';
 $langMod['INDEX']['H1']    = 'A ap&#259;rut o eroare &#238;n website.';
 $langMod['INDEX']['STT']   = 'Ne cerem scuze pentru nepl&#259;cerile provocate.';
-$langMod['INDEX']['TYPE']  = 'Tip';
-$langMod['INDEX']['MSG']   = 'Mesaj';
-$langMod['INDEX']['TIME']  = 'Timp';
-$langMod['INDEX']['CODE']  = 'Cod';
-$langMod['INDEX']['FILE']  = 'Fi&#351;ier';
-$langMod['INDEX']['LINE']  = 'Linie';
-$langMod['INDEX']['TRACE'] = 'Trace';
+
+$langMod['CORE']['TITLE'] = 'Erorare';
+$langMod['CORE']['H1']    = 'A ap&#259;rut o eroare &#238;n website.';
+$langMod['CORE']['STT']   = 'Ne cerem scuze pentru nepl&#259;cerile provocate.';
+$langMod['CORE']['TYPE']  = 'Tip';
+$langMod['CORE']['MSG']   = 'Mesaj';
+$langMod['CORE']['TIME']  = 'Timp';
+$langMod['CORE']['CODE']  = 'Cod';
+$langMod['CORE']['FILE']  = 'Fi&#351;ier';
+$langMod['CORE']['LINE']  = 'Linie';
+$langMod['CORE']['TRACE'] = 'Trace';
 ?>
