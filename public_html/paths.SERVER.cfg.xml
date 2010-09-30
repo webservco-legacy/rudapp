@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- $Id$ -->
+	<!-- $URL$ -->
+	<!-- $Revision$ -->
+
+<!-- Configuration start  -->
+<config>
+	<!-- Paths. All paths must have trailing slash. -->
+	<paths>
+		<!-- Full path to engine directory. Defaults to "./engine/". -->
+		<core_dir>/var/www/clients.rudisoft.net/rudsys/</core_dir>
+		<!-- Full path to application directory. Defaults to "./". -->
+		<app_dir>/var/www/clients.rudisoft.net/rudapp/</app_dir>
+		<!-- Full path to application web access directory. Defaults to "./". -->
+		<www_dir>/var/www/clients.rudisoft.net/web/</www_dir>
+		<!-- Application URL. Defaults to current hostname. -->
+		<app_url>http://clients.rudisoft.net/</app_url>
+	</paths>
+</config>

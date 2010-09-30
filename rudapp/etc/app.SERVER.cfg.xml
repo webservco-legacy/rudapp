@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- $Id$ -->
+	<!-- $URL$ -->
+	<!-- $Revision$ -->
+
+<!-- Configuration start  -->
+<config>
+	<!-- Application configuration. -->
+	<settings>
+		<!-- Remove "index.php" from URL's. Defaults to "" (disabled). -->
+		<fullseo>1</fullseo>
+		<!-- Report application errors. Defaults to "0" (No error reporting). -->
+		<errors>999</errors>
+		<!-- Use fake file extension in URL's. Defaults to "" (FALSE). -->
+		<fakeext>1</fakeext>
+	</settings>
+	<!-- Application information. -->
+	<application>
+		<!-- Application name. Defaults to "RudWEb Application". -->
+		<name>RudiSoft.Net Apllication</name>
+		<!-- Application author. Defaults to "Radu Maier". -->
+		<author>Radu Maier</author>
+		<!-- Application email address. Defaults to rudweb@rudisoft.net -->
+		<email>rudisoft@rudisoft.net</email>
+		<!-- Application prefix. Defaults to "rudweb". -->
+		<prefix>rudapp</prefix>
+		<!-- Application security token. Defaults to "" (NULL). -->
+		<token></token>
+	</application>
+	<!-- Database configuration. -->
+	<database>
+		<!-- Database type. Defaults to "mysql". -->
+		<type>mysql</type>
+		<!-- Database host. Defaults to "localhost". -->
+		<host>localhost</host>
+		<!-- Database port. Defaults to "3306". -->
+		<port>3306</port>
+		<!-- Database user. Defaults to "root". -->
+		<user>c1_rudapp_user</user>
+		<!-- Database password. Defaults to "" (blank). -->
+		<pass>REDACTED</pass>
+		<!-- Database name. Defaults to application prefix. -->
+		<name>c1_rudapp</name>
+	</database>
+	<!-- Default application values. -->
+	<defaults>
+		<!-- Default visitor country. Defaults to "RO". -->
+		<country>RO</country>
+		<!-- Default language to load. Defaults to "ro". -->
+		<language>ro</language>
+		<!-- Default timezone to use. Defaults to "Europe/Bucharest". -->
+		<timezone>Europe/Bucharest</timezone>
+		<!-- Default application skin. Defaults to "rudweb". -->
+		<skin>rudweb</skin>
+	</defaults>
+</config>
