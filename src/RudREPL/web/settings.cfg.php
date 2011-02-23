@@ -57,5 +57,5 @@ $cfg['url']['script'] = $cfg['url']['app'] . 'usr/scripts/';
 
 $cfg['app']['name'] = 'RudREPL';
 
-$cfg['app']['desc'] = 'Rudisoft PHP Read-eval-print loop.';
+$cfg['app']['desc'] = 'RudiSoft Read-eval-print loop.';
 ?>
