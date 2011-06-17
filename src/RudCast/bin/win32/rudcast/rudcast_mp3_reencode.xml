@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- $Id$ -->
+
+<ezstream>
+	<!-- SE VA EDITA DE AICI -->
+	
+	<!-- Adresa emisie -->
+	<url>http://radio.rudisoft.net:1985/underbeat</url>
+	
+	<!-- Parola emisie -->
+	<sourcepassword>REDACTED</sourcepassword>
+	
+	<!-- Denumirea emisiunii (apare pe site in timpul emisiei!) -->
+	<svrinfoname>My Awesome Show Name</svrinfoname>
+    
+    <!-- Gen(uri) muzical(e) (apare pe site in timpul emisiei!) -->
+    <svrinfogenre>Genre1/Genre2/Genre3</svrinfogenre>
+	
+	<!-- O descriere foarte scurta sau un mesaj legat de transmisia curenta ((apare pe site in timpul emisiei!))  -->
+    <svrinfodescription>A clever slogan or message, or just a few words about the current broadcast.</svrinfodescription>
+	
+	<!-- Denumirea fisierului playlist  -->
+	<filename>rudcast.m3u</filename>
+	
+	<!-- (Optional) Redarea playlist-ului: 0 = in ordine, 1 = shuffle -->
+	<shuffle>0</shuffle>
+	
+	<!-- SE VA EDITA PANA AICI -->
+	
+	<!-- A NU SE EDITA IN CONTINUARE -->
+	
+    <format>MP3</format>
+	
+	<metadata_format>@t@ - @a@</metadata_format>
+	
+	<svrinfourl>http://radio.example.com</svrinfourl>
+	
+	<reencode>
+		<enable>1</enable>
+       <encdec>
+			<format>MP3</format>
+			<match>.mp3</match>
+			<decode>madplay -b 16 -R 44100 -S -o raw:- "@T@"</decode>
+			<encode>lame --preset cbr 128 -r -s 44.1 --bitwidth 16 - -</encode>
+		</encdec>
+	</reencode>
+</ezstream>
