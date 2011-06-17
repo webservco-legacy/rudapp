@@ -5,10 +5,10 @@
 	<!-- SE VA EDITA DE AICI -->
 	
 	<!-- Adresa emisie -->
-	<url>http://radio.rudisoft.net:1985/underbeat</url>
+	<url>http://radio.rudisoft.net:1985/DJ_NAME_HERE</url>
 	
 	<!-- Parola emisie -->
-	<sourcepassword>REDACTED</sourcepassword>
+	<sourcepassword>YOUR_PASSWORD_HERE</sourcepassword>
 	
 	<!-- Denumirea emisiunii (apare pe site in timpul emisiei!) -->
 	<svrinfoname>My Awesome Show Name</svrinfoname>
