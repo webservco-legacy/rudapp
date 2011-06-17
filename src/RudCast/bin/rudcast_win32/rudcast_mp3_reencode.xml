@@ -20,7 +20,7 @@
     <svrinfodescription>A clever slogan or message, or just a few words about the current broadcast.</svrinfodescription>
 	
 	<!-- Denumirea fisierului playlist  -->
-	<filename>rudcast.m3u</filename>
+	<filename>rudcast_mp3_vbr.m3u</filename>
 	
 	<!-- (Optional) Redarea playlist-ului: 0 = in ordine, 1 = shuffle -->
 	<shuffle>0</shuffle>
