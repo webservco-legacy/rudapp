@@ -33,10 +33,10 @@
  */
 if (!defined('_RW_VALID'))
 {
-	/**
-	 * Stop script execution.
-	 */
-	exit;
+    /**
+     * Stop script execution.
+     */
+    exit;
 }
 
 /**
@@ -94,30 +94,30 @@ $modAbout['index']['deps']['mod'] = array();
  */
 class rw_Module_index extends rw_Module implements rw_iModule
 {
-	/**
-	 * Constructor.
-	 *
-	 * @param array $modAbout module information
-	 * @param mixed $rwCore core engine object
-	 * @param mixed $modLocation module location
-	 * @param mixed $modRequest module request query
-	 * @return mixed result
-	 */
-	public function __construct($modAbout, $rwCore, $modLocation, $modRequest)
-	{
-		/**
-		 * Call parent constructor.
-		 */
-		parent::__construct($modAbout, $rwCore, $modLocation, $modRequest);
-	}
+    /**
+     * Constructor.
+     *
+     * @param array $modAbout module information
+     * @param mixed $rwCore core engine object
+     * @param mixed $modLocation module location
+     * @param mixed $modRequest module request query
+     * @return mixed result
+     */
+    public function __construct($modAbout, $rwCore, $modLocation, $modRequest)
+    {
+        /**
+         * Call parent constructor.
+         */
+        parent::__construct($modAbout, $rwCore, $modLocation, $modRequest);
+    }
 
-	/**
-	 * (non-PHPdoc)
-	 * @see rudweb/lib/mod/rw_iModule#index()
-	 */
-	public function index()
-	{
-		echo 'Hello World';
-	}
+    /**
+     * (non-PHPdoc)
+     * @see rudweb/lib/mod/rw_iModule#index()
+     */
+    public function index()
+    {
+        echo 'Hello World';
+    }
 }
 ?>

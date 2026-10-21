@@ -31,55 +31,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="content-language" content="<?php echo $lang; ?>" />
-	<link rel="icon" type="image/ico" href="<?php echo $skinURL; ?>images/favicon.ico" />
-	<link rel="shortcut icon" type="image/ico" href="<?php echo $skinURL; ?>images/favicon.ico" />
-	<title><?php echo $title; ?></title>
-	<meta name="title" content="<?php echo $title; ?>" />
-	<meta name="subject" content="<?php echo _APP_NAME; ?>" />
-	<meta name="description" content="<?php echo $title; ?>" />
-	<meta name="abstract" content="<?php echo $title; ?>" />
-	<meta name="keywords" content="rudisoft, rudweb, rudapp" />
-	<meta name="copyright" content="2010 <?php echo _APP_NAME; ?>" />
-	<meta name="designer" content="rudisoft@rudisoft.net" />
-	<meta name="publisher" content="rudisoft@rudisoft.net" />
-	<meta name="author" content="rudisoft@rudisoft.net" />
-	<meta name="rating" content="General" />
-	<meta name="distribution" content="Global" />
-	<meta name="robots" content="Index, Follow" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/layout.css" />
-	<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/<?php echo $section; ?>.css" />
-	<script type="text/javascript" src="<?php echo $usrURL; ?>scripts/jQuery/jquery-1.4.1.min.js"></script>
-	<!--[if lte IE 6]>
-	<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/layoutIE.css" />
-	<script type="text/javascript" language="JavaScript" src="<?php echo $usrURL; ?>scripts/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
-	<script type="text/javascript" language="JavaScript" src="<?php echo $usrURL; ?>scripts/DD_belatedPNG/IEFixes.js"></script>
-	<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="<?php echo $lang; ?>" />
+    <link rel="icon" type="image/ico" href="<?php echo $skinURL; ?>images/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="<?php echo $skinURL; ?>images/favicon.ico" />
+    <title><?php echo $title; ?></title>
+    <meta name="title" content="<?php echo $title; ?>" />
+    <meta name="subject" content="<?php echo _APP_NAME; ?>" />
+    <meta name="description" content="<?php echo $title; ?>" />
+    <meta name="abstract" content="<?php echo $title; ?>" />
+    <meta name="keywords" content="rudisoft, rudweb, rudapp" />
+    <meta name="copyright" content="2010 <?php echo _APP_NAME; ?>" />
+    <meta name="designer" content="rudisoft@rudisoft.net" />
+    <meta name="publisher" content="rudisoft@rudisoft.net" />
+    <meta name="author" content="rudisoft@rudisoft.net" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="Index, Follow" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/layout.css" />
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/<?php echo $section; ?>.css" />
+    <script type="text/javascript" src="<?php echo $usrURL; ?>scripts/jQuery/jquery-1.4.1.min.js"></script>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="<?php echo $skinURL; ?>styles/layoutIE.css" />
+    <script type="text/javascript" language="JavaScript" src="<?php echo $usrURL; ?>scripts/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="<?php echo $usrURL; ?>scripts/DD_belatedPNG/IEFixes.js"></script>
+    <![endif]-->
 </head>
 <body>
-	<div id="interface">
-		<div id="header">
+    <div id="interface">
+        <div id="header">
 <?php echo $header; ?>
 
-		</div>
-		<div id="main">
-			<div id="content">
-				<div id="content_left">
+        </div>
+        <div id="main">
+            <div id="content">
+                <div id="content_left">
 <?php echo $content_left; ?>
-				
-				</div>
-				<div id="content_main">
+                
+                </div>
+                <div id="content_main">
 <?php echo $content; ?>
 
-				</div>
-			</div>
-		</div>
-		<div id="footer">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
 <?php echo $footer; ?>
 
-		</div>
-	</div>
+        </div>
+    </div>
 </body>
 </html>

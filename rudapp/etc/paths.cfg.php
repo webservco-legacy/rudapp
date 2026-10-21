@@ -32,10 +32,10 @@
  */
 if(!defined('_RW_VALID'))
 {
-	/**
-	 * Stop script execution.
-	 */
-	exit;
+    /**
+     * Stop script execution.
+     */
+    exit;
 }
 
 /**
@@ -43,10 +43,10 @@ if(!defined('_RW_VALID'))
  */
 if(!defined('_APP_EXT_DIR'))
 {
-	/**
-	 * Set application extensions directory.
-	 */
-	define('_APP_EXT_DIR', _APP_DIR . 'ext/');
+    /**
+     * Set application extensions directory.
+     */
+    define('_APP_EXT_DIR', _APP_DIR . 'ext/');
 }
 
 /**
@@ -54,10 +54,10 @@ if(!defined('_APP_EXT_DIR'))
  */
 if(!defined('_APP_INT_DIR'))
 {
-	/**
-	 * Set application internationalization directory.
-	 */
-	define('_APP_INT_DIR', _APP_DIR . 'int/');
+    /**
+     * Set application internationalization directory.
+     */
+    define('_APP_INT_DIR', _APP_DIR . 'int/');
 }
 
 /**
@@ -65,10 +65,10 @@ if(!defined('_APP_INT_DIR'))
  */
 if(!defined('_APP_MOD_DIR'))
 {
-	/**
-	 * Set application modules directory.
-	 */
-	define('_APP_MOD_DIR', _APP_DIR . 'mod/');
+    /**
+     * Set application modules directory.
+     */
+    define('_APP_MOD_DIR', _APP_DIR . 'mod/');
 }
 
 /**
@@ -76,10 +76,10 @@ if(!defined('_APP_MOD_DIR'))
  */
 if(!defined('_APP_OPT_DIR'))
 {
-	/**
-	 * Set application 3rdparty directory.
-	 */
-	define('_APP_OPT_DIR', _APP_DIR . 'opt/');
+    /**
+     * Set application 3rdparty directory.
+     */
+    define('_APP_OPT_DIR', _APP_DIR . 'opt/');
 }
 
 /**
@@ -87,10 +87,10 @@ if(!defined('_APP_OPT_DIR'))
  */
 if(!defined('_APP_TPL_DIR'))
 {
-	/**
-	 * Set application templates directory.
-	 */
-	define('_APP_TPL_DIR', _APP_OPT_DIR . 'tpl/');
+    /**
+     * Set application templates directory.
+     */
+    define('_APP_TPL_DIR', _APP_OPT_DIR . 'tpl/');
 }
 
 /**
@@ -98,10 +98,10 @@ if(!defined('_APP_TPL_DIR'))
  */
 if(!defined('_APP_TMP_DIR'))
 {
-	/**
-	 * Set application temp directory.
-	 */
-	define('_APP_TMP_DIR', _APP_DIR . 'tmp/');
+    /**
+     * Set application temp directory.
+     */
+    define('_APP_TMP_DIR', _APP_DIR . 'tmp/');
 }
 
 /**
@@ -109,10 +109,10 @@ if(!defined('_APP_TMP_DIR'))
  */
 if(!defined('_APP_USR_DIR'))
 {
-	/**
-	 * Set application var directory.
-	 */
-	define('_APP_USR_DIR', _WWW_DIR . 'usr/');
+    /**
+     * Set application var directory.
+     */
+    define('_APP_USR_DIR', _WWW_DIR . 'usr/');
 }
 
 /**
@@ -120,10 +120,10 @@ if(!defined('_APP_USR_DIR'))
  */
 if(!defined('_APP_USR_WWW'))
 {
-	/**
-	 * Set application usr (web accessible 3rdparty) directory.
-	 */
-	define('_APP_USR_WWW', _APP_WWW . 'usr/');
+    /**
+     * Set application usr (web accessible 3rdparty) directory.
+     */
+    define('_APP_USR_WWW', _APP_WWW . 'usr/');
 }
 
 /**
@@ -131,10 +131,10 @@ if(!defined('_APP_USR_WWW'))
  */
 if(!defined('_APP_VAR_DIR'))
 {
-	/**
-	 * Set application var directory.
-	 */
-	define('_APP_VAR_DIR', _WWW_DIR . 'var/');
+    /**
+     * Set application var directory.
+     */
+    define('_APP_VAR_DIR', _WWW_DIR . 'var/');
 }
 
 /**
@@ -142,10 +142,10 @@ if(!defined('_APP_VAR_DIR'))
  */
 if(!defined('_APP_VAR_WWW'))
 {
-	/**
-	 * Set application var URL.
-	 */
-	define('_APP_VAR_WWW', _APP_WWW . 'var/');
+    /**
+     * Set application var URL.
+     */
+    define('_APP_VAR_WWW', _APP_WWW . 'var/');
 }
 
 /**
@@ -153,10 +153,10 @@ if(!defined('_APP_VAR_WWW'))
  */
 if(!defined('_APP_SKIN_DIR'))
 {
-	/**
-	 * Set application skins directory.
-	 */
-	define('_APP_SKIN_DIR', _APP_USR_DIR . 'themes/');
+    /**
+     * Set application skins directory.
+     */
+    define('_APP_SKIN_DIR', _APP_USR_DIR . 'themes/');
 }
 
 /**
@@ -164,10 +164,10 @@ if(!defined('_APP_SKIN_DIR'))
  */
 if(!defined('_APP_SKIN_WWW'))
 {
-	/**
-	 * Set application skins url path.
-	 */
-	define('_APP_SKIN_WWW', _APP_USR_WWW . 'themes/');
+    /**
+     * Set application skins url path.
+     */
+    define('_APP_SKIN_WWW', _APP_USR_WWW . 'themes/');
 }
 
 /**
@@ -175,10 +175,10 @@ if(!defined('_APP_SKIN_WWW'))
  */
 if(!defined('_APP_CACHE_DIR'))
 {
-	/**
-	 * Set application cache directory.
-	 */
-	define('_APP_CACHE_DIR', _APP_VAR_DIR . 'cache/');
+    /**
+     * Set application cache directory.
+     */
+    define('_APP_CACHE_DIR', _APP_VAR_DIR . 'cache/');
 }
 
 /**
@@ -186,9 +186,9 @@ if(!defined('_APP_CACHE_DIR'))
  */
 if(!defined('_APP_CACHE_WWW'))
 {
-	/**
-	 * Set application cache url.
-	 */
-	define('_APP_CACHE_WWW', _APP_VAR_WWW . 'cache/');
+    /**
+     * Set application cache url.
+     */
+    define('_APP_CACHE_WWW', _APP_VAR_WWW . 'cache/');
 }
 ?>
