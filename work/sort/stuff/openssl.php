@@ -6,12 +6,12 @@ error_reporting(E_ALL);
 /*
 if (function_exists('openssl_get_privatekey'))
 {
-	echo 'function exists.';
+    echo 'function exists.';
 }
 
 if (extension_loaded('openssl'))
 {
-	echo 'extension loaded';
+    echo 'extension loaded';
 }
 */
 

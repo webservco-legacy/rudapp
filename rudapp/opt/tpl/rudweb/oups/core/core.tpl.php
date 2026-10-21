@@ -27,23 +27,23 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 ?>
-				<h1><?php echo $ln['MOD'][$action]['H1']; ?></h1>
-				<p><?php echo $ln['MOD'][$action]['STT']; ?></p>
-				<pre><?php var_dump(error_reporting());?></pre>
-				<div class="err_msg">
-					<p>
-						<label><?php echo $ln['MOD'][$action]['TYPE']; ?>:</label> <?php echo $type; ?>
-						<label><?php echo $ln['MOD'][$action]['CODE']; ?>:</label> <?php echo $code; ?> (<?php echo $codestr; ?>)
-						<label><?php echo $ln['MOD'][$action]['TIME']; ?>:</label> <?php echo $time; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['MSG']; ?>:</label> <?php echo $msg; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['FILE']; ?>:</label> <?php echo $file; ?> <label><?php echo $ln['MOD'][$action]['LINE']; ?>:</label> <?php echo $line; ?>
-					</p>
-					<p>
-						<label><?php echo $ln['MOD'][$action]['TRACE']; ?>:</label>
-						<textarea class="err_trace" rows="10" cols="100"><?php echo $tracestr; ?></textarea>
-					</p>
-				</div>
+                <h1><?php echo $ln['MOD'][$action]['H1']; ?></h1>
+                <p><?php echo $ln['MOD'][$action]['STT']; ?></p>
+                <pre><?php var_dump(error_reporting());?></pre>
+                <div class="err_msg">
+                    <p>
+                        <label><?php echo $ln['MOD'][$action]['TYPE']; ?>:</label> <?php echo $type; ?>
+                        <label><?php echo $ln['MOD'][$action]['CODE']; ?>:</label> <?php echo $code; ?> (<?php echo $codestr; ?>)
+                        <label><?php echo $ln['MOD'][$action]['TIME']; ?>:</label> <?php echo $time; ?>
+                    </p>
+                    <p>
+                        <label><?php echo $ln['MOD'][$action]['MSG']; ?>:</label> <?php echo $msg; ?>
+                    </p>
+                    <p>
+                        <label><?php echo $ln['MOD'][$action]['FILE']; ?>:</label> <?php echo $file; ?> <label><?php echo $ln['MOD'][$action]['LINE']; ?>:</label> <?php echo $line; ?>
+                    </p>
+                    <p>
+                        <label><?php echo $ln['MOD'][$action]['TRACE']; ?>:</label>
+                        <textarea class="err_trace" rows="10" cols="100"><?php echo $tracestr; ?></textarea>
+                    </p>
+                </div>

@@ -32,10 +32,10 @@
  */
 if(!defined('_RW_VALID'))
 {
-	/**
-	 * Stop script execution.
-	 */
-	exit;
+    /**
+     * Stop script execution.
+     */
+    exit;
 }
 
 /**
@@ -43,10 +43,10 @@ if(!defined('_RW_VALID'))
  */
 if(!defined('_CORE_CFG_DIR'))
 {
-	/**
-	 * Set engine configuration directory.
-	 */
-	define('_CORE_CFG_DIR', _CORE_DIR . 'etc/');
+    /**
+     * Set engine configuration directory.
+     */
+    define('_CORE_CFG_DIR', _CORE_DIR . 'etc/');
 }
 
 /**
@@ -54,10 +54,10 @@ if(!defined('_CORE_CFG_DIR'))
  */
 if(!defined('_APP_CFG_DIR'))
 {
-	/**
-	 * Set application configuration directory.
-	 */
-	define('_APP_CFG_DIR', _APP_DIR . 'etc/');
+    /**
+     * Set application configuration directory.
+     */
+    define('_APP_CFG_DIR', _APP_DIR . 'etc/');
 }
 
 /**
@@ -65,14 +65,14 @@ if(!defined('_APP_CFG_DIR'))
  */
 if(!is_readable(_APP_CFG_DIR.'app.cfg.xml'))
 {
-	/**
-	 * Display "404 Not Found" page
-	 */
-	require_once(_APP_DIR.'etc/404.php');
-	/**
-	 * Stop script execution.
-	 */
-	exit;
+    /**
+     * Display "404 Not Found" page
+     */
+    require_once(_APP_DIR.'etc/404.php');
+    /**
+     * Stop script execution.
+     */
+    exit;
 }
 
 /**
@@ -95,10 +95,10 @@ $cfg = simplexml_load_file(_APP_CFG_DIR.'app.cfg.xml');
  */
 if(!defined('_APP_URL'))
 {
-	/**
-	 * Set full application URL.
-	 */
-	define('_APP_URL', ($cfg->settings->fullseo == '1') ? _APP_WWW : _APP_WWW.'index.php/');
+    /**
+     * Set full application URL.
+     */
+    define('_APP_URL', ($cfg->settings->fullseo == '1') ? _APP_WWW : _APP_WWW.'index.php/');
 }
 
 /**
@@ -106,10 +106,10 @@ if(!defined('_APP_URL'))
  */
 if(!defined('_APP_ERR'))
 {
-	/**
-	 * Set database type.
-	 */
-	define('_APP_ERR', ($cfg->settings->errors == '0') ? FALSE : $cfg->settings->errors);
+    /**
+     * Set database type.
+     */
+    define('_APP_ERR', ($cfg->settings->errors == '0') ? FALSE : $cfg->settings->errors);
 }
 
 /**
@@ -117,10 +117,10 @@ if(!defined('_APP_ERR'))
  */
 if(!defined('_APP_FAKEXT'))
 {
-	/**
-	 * Set database type.
-	 */
-	define('_APP_FAKEXT', ($cfg->settings->fakeext == '1') ? TRUE : FALSE);
+    /**
+     * Set database type.
+     */
+    define('_APP_FAKEXT', ($cfg->settings->fakeext == '1') ? TRUE : FALSE);
 }
 
 /**
@@ -128,10 +128,10 @@ if(!defined('_APP_FAKEXT'))
  */
 if(!defined('_APP_NAME'))
 {
-	/**
-	 * Set application name.
-	 */
-	define('_APP_NAME', ($cfg->application->name) ? (string) $cfg->application->name : 'RudWEb Application');
+    /**
+     * Set application name.
+     */
+    define('_APP_NAME', ($cfg->application->name) ? (string) $cfg->application->name : 'RudWEb Application');
 }
 
 /**
@@ -139,10 +139,10 @@ if(!defined('_APP_NAME'))
  */
 if(!defined('_APP_AUTH'))
 {
-	/**
-	 * Set application author.
-	 */
-	define('_APP_AUTH', ($cfg->application->author) ? (string) $cfg->application->author : 'Radu Maier');
+    /**
+     * Set application author.
+     */
+    define('_APP_AUTH', ($cfg->application->author) ? (string) $cfg->application->author : 'Radu Maier');
 }
 
 /**
@@ -150,10 +150,10 @@ if(!defined('_APP_AUTH'))
  */
 if(!defined('_APP_MAIL'))
 {
-	/**
-	 * Set application email address.
-	 */
-	define('_APP_MAIL', ($cfg->application->email) ? (string) $cfg->application->email : 'rudweb@rudisoft.net');
+    /**
+     * Set application email address.
+     */
+    define('_APP_MAIL', ($cfg->application->email) ? (string) $cfg->application->email : 'rudweb@rudisoft.net');
 }
 
 /**
@@ -161,10 +161,10 @@ if(!defined('_APP_MAIL'))
  */
 if(!defined('_APP_PRE'))
 {
-	/**
-	 * Set application prefix.
-	 */
-	define('_APP_PRE', ($cfg->application->prefix) ? (string) $cfg->application->prefix : 'rudweb');
+    /**
+     * Set application prefix.
+     */
+    define('_APP_PRE', ($cfg->application->prefix) ? (string) $cfg->application->prefix : 'rudweb');
 }
 
 /**
@@ -172,10 +172,10 @@ if(!defined('_APP_PRE'))
  */
 if(!defined('_APP_TOKEN'))
 {
-	/**
-	 * Set application token.
-	 */
-	define('_APP_TOKEN', ($cfg->application->token) ? (string) $cfg->application->token : '');
+    /**
+     * Set application token.
+     */
+    define('_APP_TOKEN', ($cfg->application->token) ? (string) $cfg->application->token : '');
 }
 
 /**
@@ -183,10 +183,10 @@ if(!defined('_APP_TOKEN'))
  */
 if(!defined('_APP_DB_TYPE'))
 {
-	/**
-	 * Set database type.
-	 */
-	define('_APP_DB_TYPE', ($cfg->database->type) ? (string) $cfg->database->type : 'mysql');
+    /**
+     * Set database type.
+     */
+    define('_APP_DB_TYPE', ($cfg->database->type) ? (string) $cfg->database->type : 'mysql');
 }
 
 /**
@@ -194,10 +194,10 @@ if(!defined('_APP_DB_TYPE'))
  */
 if(!defined('_APP_DB_HOST'))
 {
-	/**
-	 * Set database host.
-	 */
-	define('_APP_DB_HOST', ($cfg->database->host) ? (string) $cfg->database->host : 'localhost');
+    /**
+     * Set database host.
+     */
+    define('_APP_DB_HOST', ($cfg->database->host) ? (string) $cfg->database->host : 'localhost');
 }
 
 /**
@@ -205,10 +205,10 @@ if(!defined('_APP_DB_HOST'))
  */
 if(!defined('_APP_DB_PORT'))
 {
-	/**
-	 * Set database port.
-	 */
-	define('_APP_DB_PORT', ($cfg->database->port) ? (string) $cfg->database->port : '3306');
+    /**
+     * Set database port.
+     */
+    define('_APP_DB_PORT', ($cfg->database->port) ? (string) $cfg->database->port : '3306');
 }
 
 /**
@@ -216,10 +216,10 @@ if(!defined('_APP_DB_PORT'))
  */
 if(!defined('_APP_DB_USER'))
 {
-	/**
-	 * Set database user.
-	 */
-	define('_APP_DB_USER', ($cfg->database->user) ? (string) $cfg->database->user : 'root');
+    /**
+     * Set database user.
+     */
+    define('_APP_DB_USER', ($cfg->database->user) ? (string) $cfg->database->user : 'root');
 }
 
 /**
@@ -227,10 +227,10 @@ if(!defined('_APP_DB_USER'))
  */
 if(!defined('_APP_DB_PASS'))
 {
-	/**
-	 * Set database password.
-	 */
-	define('_APP_DB_PASS', ($cfg->database->pass) ? (string) $cfg->database->pass : '');
+    /**
+     * Set database password.
+     */
+    define('_APP_DB_PASS', ($cfg->database->pass) ? (string) $cfg->database->pass : '');
 }
 
 /**
@@ -238,10 +238,10 @@ if(!defined('_APP_DB_PASS'))
  */
 if(!defined('_APP_DB_NAME'))
 {
-	/**
-	 * Set database name.
-	 */
-	define('_APP_DB_NAME', ($cfg->database->name) ? (string) $cfg->database->name : _APP_PRE);
+    /**
+     * Set database name.
+     */
+    define('_APP_DB_NAME', ($cfg->database->name) ? (string) $cfg->database->name : _APP_PRE);
 }
 
 /**
@@ -249,10 +249,10 @@ if(!defined('_APP_DB_NAME'))
  */
 if(!defined('_APP_VC'))
 {
-	/**
-	 * Set default visitor country.
-	 */
-	define('_APP_VC', ($cfg->defaults->country) ? (string) $cfg->defaults->country : 'RO');
+    /**
+     * Set default visitor country.
+     */
+    define('_APP_VC', ($cfg->defaults->country) ? (string) $cfg->defaults->country : 'RO');
 }
 
 /**
@@ -260,10 +260,10 @@ if(!defined('_APP_VC'))
  */
 if(!defined('_APP_LN'))
 {
-	/**
-	 * Set default application language.
-	 */
-	define('_APP_LN', ($cfg->defaults->language) ? (string) $cfg->defaults->language : 'ro');
+    /**
+     * Set default application language.
+     */
+    define('_APP_LN', ($cfg->defaults->language) ? (string) $cfg->defaults->language : 'ro');
 }
 
 /**
@@ -271,10 +271,10 @@ if(!defined('_APP_LN'))
  */
 if(!defined('_APP_TIMEZONE'))
 {
-	/**
-	 * Set default application timezone.
-	 */
-	define('_APP_TIMEZONE', ($cfg->defaults->timezone) ? (string) $cfg->defaults->timezone : 'Europe/Bucharest');
+    /**
+     * Set default application timezone.
+     */
+    define('_APP_TIMEZONE', ($cfg->defaults->timezone) ? (string) $cfg->defaults->timezone : 'Europe/Bucharest');
 }
 
 /**
@@ -282,9 +282,9 @@ if(!defined('_APP_TIMEZONE'))
  */
 if(!defined('_APP_SKIN'))
 {
-	/**
-	 * Set default application skin.
-	 */
-	define('_APP_SKIN', ($cfg->defaults->skin) ? (string) $cfg->defaults->skin : 'rudweb');
+    /**
+     * Set default application skin.
+     */
+    define('_APP_SKIN', ($cfg->defaults->skin) ? (string) $cfg->defaults->skin : 'rudweb');
 }
 ?>

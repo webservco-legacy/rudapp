@@ -27,6 +27,6 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 ?>
-				<h1><?php echo $ln['MOD'][$action]['H1']; ?></h1>
-				<p><?php echo $ln['MOD'][$action]['STT']; ?></p>
-				<p><?php echo $msg; ?></p>
+                <h1><?php echo $ln['MOD'][$action]['H1']; ?></h1>
+                <p><?php echo $ln['MOD'][$action]['STT']; ?></p>
+                <p><?php echo $msg; ?></p>
