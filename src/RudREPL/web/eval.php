@@ -27,10 +27,10 @@ $code = ( isset( $_POST['code'] ) && !empty( $_POST['code'] ) ) ? $_POST['code']
 
 if ( !empty( $code ) )
 {
-	eval("?>\n" . $code . "<?php ");
+    eval("?>\n" . $code . "<?php ");
 }
 else
 {
-	echo '&#160;';
+    echo '&#160;';
 }
 ?>
