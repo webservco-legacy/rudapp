@@ -37,10 +37,10 @@ define('_RW_VALID', TRUE);
  */
 if(!is_readable('./paths.cfg.xml'))
 {
-	/**
-	 * Stop script execution
-	 */
-	exit;
+    /**
+     * Stop script execution
+     */
+    exit;
 }
 
 /**
@@ -53,10 +53,10 @@ $cfg = simplexml_load_file('./paths.cfg.xml');
  */
 if(!defined('_CORE_DIR'))
 {
-	/**
-	 * Set engine main directory.
-	 */
-	define('_CORE_DIR', ($cfg->paths->core_dir) ? (string) $cfg->paths->core_dir : './engine');
+    /**
+     * Set engine main directory.
+     */
+    define('_CORE_DIR', ($cfg->paths->core_dir) ? (string) $cfg->paths->core_dir : './engine');
 }
 
 /**
@@ -64,10 +64,10 @@ if(!defined('_CORE_DIR'))
  */
 if(!defined('_APP_DIR'))
 {
-	/**
-	 * Set application main directory.
-	 */
-	define('_APP_DIR', ($cfg->paths->app_dir) ? (string) $cfg->paths->app_dir : './');
+    /**
+     * Set application main directory.
+     */
+    define('_APP_DIR', ($cfg->paths->app_dir) ? (string) $cfg->paths->app_dir : './');
 }
 
 /**
@@ -75,10 +75,10 @@ if(!defined('_APP_DIR'))
  */
 if(!defined('_WWW_DIR'))
 {
-	/**
-	 * Set application web access directory.
-	 */
-	define('_WWW_DIR', ($cfg->paths->www_dir) ? (string) $cfg->paths->www_dir : './');
+    /**
+     * Set application web access directory.
+     */
+    define('_WWW_DIR', ($cfg->paths->www_dir) ? (string) $cfg->paths->www_dir : './');
 }
 
 /**
@@ -86,10 +86,10 @@ if(!defined('_WWW_DIR'))
  */
 if(!defined('_APP_WWW'))
 {
-	/**
-	 * Set application main directory.
-	 */
-	define('_APP_WWW', ($cfg->paths->app_url) ? (string) $cfg->paths->app_url : 'http://'.$_SERVER['HTTP_HOST'].'/');
+    /**
+     * Set application main directory.
+     */
+    define('_APP_WWW', ($cfg->paths->app_url) ? (string) $cfg->paths->app_url : 'http://'.$_SERVER['HTTP_HOST'].'/');
 }
 
 /**
@@ -97,14 +97,14 @@ if(!defined('_APP_WWW'))
  */
 if(!is_readable(_APP_DIR.'sys/app.sys.php'))
 {
-	/**
-	 * Display "404 Not Found" page
-	 */
-	require_once(_APP_DIR.'etc/404.php');
-	/**
-	 * Stop script execution
-	 */
-	exit;
+    /**
+     * Display "404 Not Found" page
+     */
+    require_once(_APP_DIR.'etc/404.php');
+    /**
+     * Stop script execution
+     */
+    exit;
 }
 
 /**

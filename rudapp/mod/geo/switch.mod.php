@@ -33,10 +33,10 @@
  */
 if (!defined('_RW_VALID'))
 {
-	/**
-	 * Stop script execution.
-	 */
-	exit;
+    /**
+     * Stop script execution.
+     */
+    exit;
 }
 
 /**
@@ -94,98 +94,98 @@ $modAbout['switch']['deps']['mod'] = array();
  */
 class rw_Module_switch extends rw_Module implements rw_iModule
 {
-	/**
-	 * Constructor.
-	 *
-	 * @param array $modAbout module information
-	 * @param mixed $rwCore core engine object
-	 * @param mixed $modLocation module location
-	 * @param mixed $modRequest module request query
-	 * @return mixed result
-	 */
-	public function __construct($modAbout, $rwCore, $modLocation, $modRequest)
-	{
-		/**
-		 * Call parent constructor.
-		 */
-		parent::__construct($modAbout, $rwCore, $modLocation, $modRequest);
-		/**
-		 * Record user activity.
-		 */
-		$this->rwCore->rwExts['Users']->recordOnline($modLocation, $modRequest);
-	}
+    /**
+     * Constructor.
+     *
+     * @param array $modAbout module information
+     * @param mixed $rwCore core engine object
+     * @param mixed $modLocation module location
+     * @param mixed $modRequest module request query
+     * @return mixed result
+     */
+    public function __construct($modAbout, $rwCore, $modLocation, $modRequest)
+    {
+        /**
+         * Call parent constructor.
+         */
+        parent::__construct($modAbout, $rwCore, $modLocation, $modRequest);
+        /**
+         * Record user activity.
+         */
+        $this->rwCore->rwExts['Users']->recordOnline($modLocation, $modRequest);
+    }
 
-	/**
-	 * (non-PHPdoc)
-	 * @see rudweb/lib/mod/rw_iModule#index()
-	 */
-	public function index()
-	{
-		/**
-		 * Redirect to section index page.
-		 */
-		return $this->rwCore->rwExts['Routing']->rwRedirect('geo');
-	}
+    /**
+     * (non-PHPdoc)
+     * @see rudweb/lib/mod/rw_iModule#index()
+     */
+    public function index()
+    {
+        /**
+         * Redirect to section index page.
+         */
+        return $this->rwCore->rwExts['Routing']->rwRedirect('geo');
+    }
 
-	/**
-	 * Change current session language.
-	 *
-	 * @return mixed result
-	 */
-	public function lang()
-	{
-		/**
-		 * Get request and split it by "/".
-		 */
-		$r   = explode('/', $this->modRequest);
-		/**
-		 * Try to get new language.
-		 */
-		$ln  = isset($r[0]) ? $r[0] : NULL;
-		/**
-		 * Try to get raw action (where to redirect).
-		 */
-		$act = isset($r[1]) ? $this->rwCore->rwExts['Routing']->rwRedirectAction($r[1]) : NULL;
-		/**
-		 * Get available languages.
-		 */
-		$lns = $this->rwCore->rwExts['Geo']->getLangs();
-		/**
-		 * Check if we have a valid existing language.
-		 */
-		if($ln && array_key_exists($ln, $lns))
-		{
-			/**
-			 * Set new language.
-			 */
-			$_SESSION[_APP_PRE.'_usr']['ln'] = $ln;
-		}
-		/**
-		 * Check if we got an action.
-		 */
-		if($act)
-		{
-			/**
-			 * Redirect to action.
-			 */
-			$this->rwCore->rwExts['Routing']->rwRedirect($act);
-		}
-		/**
-		 * No valid action is set.
-		 *
-		 * Language is already changed, so we...
-		 */
-		else
-		{
-			/**
-			 * Redirect to home page.
-			 */
-			$this->rwCore->rwExts['Routing']->rwRedirect('index');
-		}
-		/**
-		 * Return result.
-		 */
-		return TRUE;
-	}
+    /**
+     * Change current session language.
+     *
+     * @return mixed result
+     */
+    public function lang()
+    {
+        /**
+         * Get request and split it by "/".
+         */
+        $r   = explode('/', $this->modRequest);
+        /**
+         * Try to get new language.
+         */
+        $ln  = isset($r[0]) ? $r[0] : NULL;
+        /**
+         * Try to get raw action (where to redirect).
+         */
+        $act = isset($r[1]) ? $this->rwCore->rwExts['Routing']->rwRedirectAction($r[1]) : NULL;
+        /**
+         * Get available languages.
+         */
+        $lns = $this->rwCore->rwExts['Geo']->getLangs();
+        /**
+         * Check if we have a valid existing language.
+         */
+        if($ln && array_key_exists($ln, $lns))
+        {
+            /**
+             * Set new language.
+             */
+            $_SESSION[_APP_PRE.'_usr']['ln'] = $ln;
+        }
+        /**
+         * Check if we got an action.
+         */
+        if($act)
+        {
+            /**
+             * Redirect to action.
+             */
+            $this->rwCore->rwExts['Routing']->rwRedirect($act);
+        }
+        /**
+         * No valid action is set.
+         *
+         * Language is already changed, so we...
+         */
+        else
+        {
+            /**
+             * Redirect to home page.
+             */
+            $this->rwCore->rwExts['Routing']->rwRedirect('index');
+        }
+        /**
+         * Return result.
+         */
+        return TRUE;
+    }
 }
 ?>
