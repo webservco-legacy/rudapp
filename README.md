@@ -42,6 +42,7 @@ ones.
 From my Subversion repository (`RudApp`, its trunk and branches) and a copy of the 2010 working copy, turned into git in
 2026 (15 commits on all branches), the dates and the `git-svn-id` lines kept. The last commit of each branch
 before this README sets LF line endings and indents with spaces (not in the third-party code).
+The earlier commits have LF line endings too: 10 files had CRLF line endings in the originals.
 
 ## Third-party code
 
